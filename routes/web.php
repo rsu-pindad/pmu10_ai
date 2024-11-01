@@ -16,10 +16,10 @@ use Livewire\Volt\Volt;
  */
 
 Route::group(['middleware' => 'auth'], function () {
-    Volt::route('/chat-ai', 'chatai.flowise-card')->name('chat-ai')->middleware('auth');
-    Volt::route('/chat-ai/rpb', 'chatai.flowise-rpb-bot')->name('chat-rpb-bot')->middleware('auth');
-    Volt::route('/chat-ai/policy', 'chatai.flowise-policy-bot')->name('chat-policy-bot')->middleware('auth');
-    Volt::route('/chat-ai/doc', 'chatai.flowise-doc-bot')->name('chat-doc-bot')->middleware('auth');
+    Volt::route('/chat-ai', 'chatai.flowise-card')->name('chat-ai');
+    Volt::route('/chat-ai/rpb', 'chatai.flowise-rpb-bot')->name('chat-rpb-bot');
+    Volt::route('/chat-ai/policy', 'chatai.flowise-policy-bot')->name('chat-policy-bot');
+    Volt::route('/chat-ai/doc', 'chatai.flowise-doc-bot')->name('chat-doc-bot');
     Route::get('/logout', [GoogleLoginController::class, 'handleGoogleLogout'])->name('google.logout');
 });
 Route::group(['middleware' => 'guest'], function () {
