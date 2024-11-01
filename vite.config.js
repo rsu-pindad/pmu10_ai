@@ -8,5 +8,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    chunkSizeWarningLimit: 15000,
+    build: {
+        chunkSizeWarningLimit: 2000,
+    }
 });
