@@ -11,9 +11,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
 
-  <body class="flex h-svh bg-gray-100 flex-col">
+  <body class="h-svh flex flex-col bg-gray-100">
     <x-partial.header />
-    <main class="container py-2">
+    <main class="container mx-auto my-auto rounded">
       {{ $slot }}
     </main>
     <x-partial.footer />

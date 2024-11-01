@@ -1,14 +1,13 @@
 <?php
 
-use function Livewire\Volt\{state};
-
+use function Livewire\Volt\{state, title};
+title('Chat Bot');
 ?>
 
 <div>
   <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.initFull({
-      chatflowid: "8aefaee3-259b-409b-b66c-6af931b98865",
+      chatflowid: "969d26d0-a327-4544-a587-7f0c324e3e04",
       apiHost: "https://ai.pindadmedika.my.id",
       theme: {
         button: {

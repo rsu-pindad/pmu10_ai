@@ -76,7 +76,8 @@ use function Livewire\Volt\{state};
           </a>
         </div>
       </div>
-      <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
+      <div
+           class="max-h-svh max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
         <a href="#">
           <img class="h-40 w-96 rounded-t-lg object-fill"
                src="{{ Storage::disk('public')->url('img/pratama.png') }}"
@@ -93,7 +94,8 @@ use function Livewire\Volt\{state};
           </p>
         </div>
       </div>
-      <div class="max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
+      <div
+           class="max-h-svh max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
         <a href="#">
           <img class="h-40 w-96 rounded-t-lg object-fill"
                src="{{ Storage::disk('public')->url('img/cakra.png') }}"

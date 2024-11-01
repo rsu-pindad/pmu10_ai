@@ -15,8 +15,15 @@ use Livewire\Volt\Volt;
  * |
  */
 
-Volt::route('/', 'guest.beranda')->name('beranda')->middleware('guest');;
-Volt::route('/chat-ai', 'chatai.flowise-chat-bot')->name('chat-ai')->middleware('auth');;
-Route::get('/google/redirect', [GoogleLoginController::class, 'redirectToGoogle'])->name('google.redirect');
-Route::get('/google/callback', [GoogleLoginController::class, 'handleGoogleCallback'])->name('google.callback');
-Route::get('/logout', [GoogleLoginController::class,          'handleGoogleLogout'])->name('google.logout');
+Route::group(['middleware' => 'auth'], function () {
+    Volt::route('/chat-ai', 'chatai.flowise-card')->name('chat-ai')->middleware('auth');
+    Volt::route('/chat-ai/rpb', 'chatai.flowise-rpb-bot')->name('chat-rpb-bot')->middleware('auth');
+    Volt::route('/chat-ai/policy', 'chatai.flowise-policy-bot')->name('chat-policy-bot')->middleware('auth');
+    Volt::route('/chat-ai/doc', 'chatai.flowise-doc-bot')->name('chat-doc-bot')->middleware('auth');
+    Route::get('/logout', [GoogleLoginController::class, 'handleGoogleLogout'])->name('google.logout');
+});
+Route::group(['middleware' => 'guest'], function () {
+    Volt::route('/', 'guest.beranda')->name('beranda');
+    Route::get('/google/redirect', [GoogleLoginController::class, 'redirectToGoogle'])->name('google.redirect');
+    Route::get('/google/callback', [GoogleLoginController::class, 'handleGoogleCallback'])->name('google.callback');
+});
