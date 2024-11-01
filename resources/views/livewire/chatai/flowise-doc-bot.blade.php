@@ -64,7 +64,7 @@ title('Doc Chat Bot');
         },
         disclaimer: {
           title: 'Disclaimer',
-          message: 'By using this chatbot, you agree to the <a target="_blank" href="https://flowiseai.com/terms">Terms & Condition</a>',
+          message: 'Dengan menggunakan chatbot ini, Anda menyetujui Syarat & Ketentuan',
         },
         chatWindow: {
           showTitle: true,
