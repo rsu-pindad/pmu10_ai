@@ -23,7 +23,7 @@
               d="M19 12H5m14 0-4 4m4-4-4-4" />
       </svg>
       <div class="text-left rtl:text-right">
-        <div class="mb-1 text-xs">Coba BOT Kami</div>
+        <div class="mb-1 text-xs">Coba AI Kami</div>
         <div class="-mt-1 font-sans text-sm font-semibold">Kunjungi</div>
       </div>
     </a>

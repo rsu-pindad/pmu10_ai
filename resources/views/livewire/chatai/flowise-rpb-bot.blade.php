@@ -31,6 +31,18 @@ title('RPB Chat Bot');
     </x-chat.flowise-breadcrumb>
   </div>
 
+  <div class="mx-4 my-2">
+    <x-alert.alert type="info"
+                   title="RPB"
+                   message="dokumen dapat dilihat di">
+      <x-slot:link>
+        <a href="{{ Storage::disk('public')->url('dokumen/DRP_pmu_.pdf') }}"
+           target="_blank"
+           class="font-medium text-blue-600 underline hover:no-underline dark:text-blue-500">klik disini</a>
+      </x-slot>
+    </x-alert.alert>
+  </div>
+
   <div class="mt-4">
     <flowise-fullchatbot></flowise-fullchatbot>
   </div>
