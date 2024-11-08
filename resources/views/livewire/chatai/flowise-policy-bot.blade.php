@@ -56,7 +56,7 @@ title('Policy Chat Bot');
     });
     Chatbot.initFull({
       chatflowid: "9b0f6f78-115c-4cc6-a0f6-6a3c11d2db0b",
-      apiHost: "https://backbone.pmu.my.id/",
+      apiHost: "https://backbone.pmu.my.id",
       theme: {
         button: {
           backgroudColor: '#f1f2f3f4',
