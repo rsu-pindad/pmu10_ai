@@ -91,7 +91,7 @@ title('Doc Chat Bot');
           },
           textInput: {
             placeholder: 'unggah dokumen dan cari tahu isi dokumen tersebut ',
-            maxChars: 50,
+            maxChars: 100,
             maxCharsWarningMessage: 'pesan anda terlalu banyak :(',
             autoFocus: true,
             sendMessageSound: true,

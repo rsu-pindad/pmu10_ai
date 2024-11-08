@@ -104,7 +104,7 @@ title('Policy Chat Bot');
           },
           textInput: {
             placeholder: 'cari tahu isi dokumen IT POLICY di PT PMU ',
-            maxChars: 50,
+            maxChars: 100,
             maxCharsWarningMessage: 'pesan anda terlalu banyak :(',
             autoFocus: true,
             sendMessageSound: true,

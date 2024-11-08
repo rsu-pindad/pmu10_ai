@@ -104,7 +104,7 @@ title('RPB Chat Bot');
           },
           textInput: {
             placeholder: 'cari tahu isi dokumen rencana pemulihan bencana di PT PMU ',
-            maxChars: 50,
+            maxChars: 100,
             maxCharsWarningMessage: 'pesan anda terlalu banyak :(',
             autoFocus: true,
             sendMessageSound: true,
