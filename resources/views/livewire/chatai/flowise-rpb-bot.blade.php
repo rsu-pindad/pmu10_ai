@@ -55,8 +55,8 @@ title('RPB Chat Bot');
       seed: 'PMU BOT RPB',
     });
     Chatbot.initFull({
-      chatflowid: "037d2639-bb82-4402-a7bf-b1ba94e9170f",
-      apiHost: "https://ai.pindadmedika.my.id",
+      chatflowid: "9b0f6f78-115c-4cc6-a0f6-6a3c11d2db0b",
+      apiHost: "https://backbone.pmu.my.id/",
       theme: {
         button: {
           backgroudColor: '#f1f2f3f4',
