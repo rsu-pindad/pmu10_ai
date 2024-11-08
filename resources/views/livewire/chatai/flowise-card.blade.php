@@ -30,7 +30,7 @@ mount(function () {
                          :image="$this->policyAvatar"
                          imageAlt="Policy" />
   </div>
-  {{-- <div class="mt-6 grid grid-rows-1 gap-4">
+  <div class="mt-6 grid grid-rows-1 gap-4">
     <x-chat.flowise-card-2 link="/chat-ai/doc" />
-  </div> --}}
+  </div>
 </div>

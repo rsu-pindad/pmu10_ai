@@ -43,8 +43,8 @@ title('Doc Chat Bot');
       seed: 'PMU BOT Doc',
     });
     Chatbot.initFull({
-      chatflowid: "969d26d0-a327-4544-a587-7f0c324e3e04",
-      apiHost: "https://ai.pindadmedika.my.id",
+      chatflowid: "00816a07-129c-4ce7-a8d7-6ee79b02162a",
+      apiHost: "https://backbone.pmu.my.id",
       theme: {
         button: {
           backgroudColor: '#f1f2f3f4',
